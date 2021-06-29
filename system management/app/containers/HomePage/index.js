@@ -5,7 +5,6 @@ import { ThemeProvider, withStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Sidebar from 'components/Sidebar';
 import Header from 'components/Header';
-import Copyright from 'components/Copyright';
 import User from 'containers/User/Loadable';
 import theme from './theme';
 import styles, { drawerWidth } from './styles';
@@ -45,9 +44,7 @@ function HomePage(props) {
           </main>
 
           {/* Phần footer */}
-          <footer className={classes.footer}>
-            <Copyright />
-          </footer>
+          <footer className={classes.footer} />
         </div>
       </div>
     </ThemeProvider>
