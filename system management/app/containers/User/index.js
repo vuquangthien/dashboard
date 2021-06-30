@@ -5,9 +5,10 @@ import { withStyles } from '@material-ui/core/styles';
 import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
 import Box from '@material-ui/core/Box';
-import Table from 'components/Table';
+// import Table from 'components/Table';
 import TabPanel from './TabPanel';
 import styles from './styles';
+import GridList from '../../components/GridList';
 
 function User(props) {
   const { classes } = props;
@@ -23,7 +24,7 @@ function User(props) {
   });
 
   return (
-    <Box style={{ height: '100%' }} pb={3}>
+    <Box>
       <AppBar
         component="div"
         className={classes.secondaryBar}
@@ -40,14 +41,10 @@ function User(props) {
       </AppBar>
 
       <TabPanel value={value} index={0}>
-        <div className={classes.paper}>
-          <Table />
-        </div>
+        <GridList />
       </TabPanel>
 
-      <TabPanel value={value} index={1}>
-        Item 2
-      </TabPanel>
+      <TabPanel value={value} index={1} />
 
       <TabPanel value={value} index={2}>
         Item 3

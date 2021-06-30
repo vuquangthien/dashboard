@@ -42,58 +42,44 @@ function Navigator(props) {
 
   const handleActiveUser = () => {
     resetActive();
+    other.onClose();
     setUserActived(true);
-    setTimeout(() => {
-      props.onClose();
-    }, 300);
   };
 
   const handleActiveDepartment = () => {
     resetActive();
+    other.onClose();
     setDepartmentActived(true);
-    setTimeout(() => {
-      props.onClose();
-    }, 300);
   };
 
   const handleActiveApp = () => {
     resetActive();
+    other.onClose();
     setAppActived(true);
-    setTimeout(() => {
-      props.onClose();
-    }, 300);
   };
 
   const handleActiveExtension = () => {
     resetActive();
+    other.onClose();
     setExtensionActived(true);
-    setTimeout(() => {
-      props.onClose();
-    }, 300);
   };
 
   const handleActiveChart = () => {
     resetActive();
+    other.onClose();
     setChartActived(true);
-    setTimeout(() => {
-      props.onClose();
-    }, 300);
   };
 
   const handleActiveAnalysis = () => {
     resetActive();
+    other.onClose();
     setAnalysisActived(true);
-    setTimeout(() => {
-      props.onClose();
-    }, 300);
   };
 
   const handleActivePerformance = () => {
     resetActive();
+    other.onClose();
     setPerformanceActived(true);
-    setTimeout(() => {
-      props.onClose();
-    }, 300);
   };
 
   return (

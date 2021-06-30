@@ -1,7 +1,7 @@
 import React from 'react';
 import Proptypes from 'prop-types';
 import Hidden from '@material-ui/core/Hidden';
-import Navigator from 'components/Navigator';
+import Navigator from './Navigator';
 
 function Sidebar(props) {
   return (
